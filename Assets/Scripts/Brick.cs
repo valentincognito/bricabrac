@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Brick : MonoBehaviour {
-
+	public AudioClip crack;
 	public Sprite[] hitSprites;
 	public static int breakableCount = 0;
 
@@ -34,7 +34,8 @@ public class Brick : MonoBehaviour {
 	}
 
 	void HandleHits(){
-				timesHit++;
+		timesHit++;
+		AudioSource.PlayClipAtPoint(crack, transform.position);
 		if(timesHit >= hitSprites.Length + 1){ 
 			breakableCount--;
 			levelManager.BrickDestroyed();

@@ -23,4 +23,10 @@ public class Ball : MonoBehaviour {
 			}
 		}/* game has not started */
 	}/* update end */
+
+	void OnCollisionEnter2D(Collision2D trigger){
+		if(hasStarted){
+			audio.Play();
+		}
+	}
 }

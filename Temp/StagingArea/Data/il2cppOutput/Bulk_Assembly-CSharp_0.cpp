@@ -33,13 +33,14 @@
 #include "UnityEngine_UnityEngine_AudioSource1135106623.h"
 #include "AssemblyU2DCSharp_Brick1619971827.h"
 #include "mscorlib_System_String2029220233.h"
+#include "mscorlib_System_Object2689449295.h"
 #include "AssemblyU2DCSharp_LevelManager3355282079.h"
 #include "UnityEngine_UnityEngine_AudioClip1932558630.h"
+#include "UnityEngine_UnityEngine_Quaternion4030073918.h"
+#include "UnityEngine_UnityEngine_GameObject1756533147.h"
 #include "UnityEngine_UnityEngine_Object1021602117.h"
 #include "UnityEngine_UnityEngine_Sprite309593783.h"
-#include "UnityEngine_UnityEngine_GameObject1756533147.h"
 #include "UnityEngine_UnityEngine_SpriteRenderer1209076198.h"
-#include "mscorlib_System_Object2689449295.h"
 #include "AssemblyU2DCSharp_LoseCollider1155462885.h"
 #include "UnityEngine_UnityEngine_Collider2D646061738.h"
 #include "AssemblyU2DCSharp_MusicPlayer3223126890.h"
@@ -94,12 +95,16 @@ extern const MethodInfo* Component_GetComponent_TisAudioSource_t1135106623_m3920
 extern const uint32_t Ball_OnCollisionEnter2D_m417654134_MetadataUsageId;
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* Brick_t1619971827_il2cpp_TypeInfo_var;
+extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
 extern const MethodInfo* Object_FindObjectOfType_TisLevelManager_t3355282079_m1351033480_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2154845717;
 extern const uint32_t Brick_Start_m3679901112_MetadataUsageId;
+extern const MethodInfo* Object_Instantiate_TisGameObject_t1756533147_m3064851704_MethodInfo_var;
 extern const uint32_t Brick_HandleHits_m912065526_MetadataUsageId;
 extern const MethodInfo* Component_GetComponent_TisSpriteRenderer_t1209076198_m2178781570_MethodInfo_var;
 extern const uint32_t Brick_LoadSprites_m1048576086_MetadataUsageId;
+extern const uint32_t LevelManager_LoadLevel_m3771066388_MetadataUsageId;
+extern const uint32_t LevelManager_LoadNextLevel_m4205287453_MetadataUsageId;
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral4082968917;
 extern const uint32_t LevelManager_QuitRequest_m3014183236_MetadataUsageId;
@@ -158,6 +163,8 @@ public:
 extern "C"  Il2CppObject * Object_FindObjectOfType_TisIl2CppObject_m483057723_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method);
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m4109961936_gshared (Component_t3819376471 * __this, const MethodInfo* method);
+// !!0 UnityEngine.Object::Instantiate<System.Object>(!!0,UnityEngine.Vector3,UnityEngine.Quaternion)
+extern "C"  Il2CppObject * Object_Instantiate_TisIl2CppObject_m3829784634_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, Vector3_t2243707580  p1, Quaternion_t4030073918  p2, const MethodInfo* method);
 
 // System.Void UnityEngine.MonoBehaviour::.ctor()
 extern "C"  void MonoBehaviour__ctor_m2464341955 (MonoBehaviour_t1158329972 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -197,6 +204,8 @@ extern "C"  Vector2_t2243707579  Vector2_op_Addition_m1389598521 (Il2CppObject *
 extern "C"  String_t* Component_get_tag_m357168014 (Component_t3819376471 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.String::op_Equality(System.String,System.String)
 extern "C"  bool String_op_Equality_m1790663636 (Il2CppObject * __this /* static, unused */, String_t* p0, String_t* p1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.MonoBehaviour::print(System.Object)
+extern "C"  void MonoBehaviour_print_m3437620292 (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Brick::HandleHits()
 extern "C"  void Brick_HandleHits_m912065526 (Brick_t1619971827 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.AudioSource::PlayClipAtPoint(UnityEngine.AudioClip,UnityEngine.Vector3)
@@ -205,6 +214,12 @@ extern "C"  void AudioSource_PlayClipAtPoint_m1513558507 (Il2CppObject * __this 
 extern "C"  void LevelManager_BrickDestroyed_m737389094 (LevelManager_t3355282079 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.GameObject UnityEngine.Component::get_gameObject()
 extern "C"  GameObject_t1756533147 * Component_get_gameObject_m3105766835 (Component_t3819376471 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Transform UnityEngine.GameObject::get_transform()
+extern "C"  Transform_t3275118058 * GameObject_get_transform_m909382139 (GameObject_t1756533147 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Quaternion::.ctor(System.Single,System.Single,System.Single,System.Single)
+extern "C"  void Quaternion__ctor_m3196903881 (Quaternion_t4030073918 * __this, float p0, float p1, float p2, float p3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// !!0 UnityEngine.Object::Instantiate<UnityEngine.GameObject>(!!0,UnityEngine.Vector3,UnityEngine.Quaternion)
+#define Object_Instantiate_TisGameObject_t1756533147_m3064851704(__this /* static, unused */, p0, p1, p2, method) ((  GameObject_t1756533147 * (*) (Il2CppObject * /* static, unused */, GameObject_t1756533147 *, Vector3_t2243707580 , Quaternion_t4030073918 , const MethodInfo*))Object_Instantiate_TisIl2CppObject_m3829784634_gshared)(__this /* static, unused */, p0, p1, p2, method)
 // System.Void UnityEngine.Object::Destroy(UnityEngine.Object)
 extern "C"  void Object_Destroy_m4145850038 (Il2CppObject * __this /* static, unused */, Object_t1021602117 * p0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Brick::LoadSprites()
@@ -381,15 +396,15 @@ extern "C"  void Brick_Start_m3679901112 (Brick_t1619971827 * __this, const Meth
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		__this->set_timesHit_5(0);
+		__this->set_timesHit_6(0);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		LevelManager_t3355282079 * L_0 = Object_FindObjectOfType_TisLevelManager_t3355282079_m1351033480(NULL /*static, unused*/, /*hidden argument*/Object_FindObjectOfType_TisLevelManager_t3355282079_m1351033480_MethodInfo_var);
-		__this->set_levelManager_6(L_0);
+		__this->set_levelManager_7(L_0);
 		String_t* L_1 = Component_get_tag_m357168014(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		bool L_2 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_1, _stringLiteral2154845717, /*hidden argument*/NULL);
-		__this->set_isBreakable_7(L_2);
-		bool L_3 = __this->get_isBreakable_7();
+		__this->set_isBreakable_8(L_2);
+		bool L_3 = __this->get_isBreakable_8();
 		if (!L_3)
 		{
 			goto IL_003f;
@@ -403,6 +418,11 @@ extern "C"  void Brick_Start_m3679901112 (Brick_t1619971827 * __this, const Meth
 
 IL_003f:
 	{
+		IL2CPP_RUNTIME_CLASS_INIT(Brick_t1619971827_il2cpp_TypeInfo_var);
+		int32_t L_5 = ((Brick_t1619971827_StaticFields*)Brick_t1619971827_il2cpp_TypeInfo_var->static_fields)->get_breakableCount_4();
+		int32_t L_6 = L_5;
+		Il2CppObject * L_7 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_6);
+		MonoBehaviour_print_m3437620292(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -410,7 +430,7 @@ IL_003f:
 extern "C"  void Brick_OnCollisionExit2D_m976673468 (Brick_t1619971827 * __this, Collision2D_t1539500754 * ___trigger0, const MethodInfo* method)
 {
 	{
-		bool L_0 = __this->get_isBreakable_7();
+		bool L_0 = __this->get_isBreakable_8();
 		if (!L_0)
 		{
 			goto IL_0011;
@@ -435,37 +455,45 @@ extern "C"  void Brick_HandleHits_m912065526 (Brick_t1619971827 * __this, const 
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		int32_t L_0 = __this->get_timesHit_5();
-		__this->set_timesHit_5(((int32_t)((int32_t)L_0+(int32_t)1)));
+		int32_t L_0 = __this->get_timesHit_6();
+		__this->set_timesHit_6(((int32_t)((int32_t)L_0+(int32_t)1)));
 		AudioClip_t1932558630 * L_1 = __this->get_crack_2();
 		Transform_t3275118058 * L_2 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
 		Vector3_t2243707580  L_3 = Transform_get_position_m1104419803(L_2, /*hidden argument*/NULL);
 		AudioSource_PlayClipAtPoint_m1513558507(NULL /*static, unused*/, L_1, L_3, /*hidden argument*/NULL);
-		int32_t L_4 = __this->get_timesHit_5();
+		int32_t L_4 = __this->get_timesHit_6();
 		SpriteU5BU5D_t3359083662* L_5 = __this->get_hitSprites_3();
 		if ((((int32_t)L_4) < ((int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_5)->max_length))))+(int32_t)1)))))
 		{
-			goto IL_0060;
+			goto IL_0095;
 		}
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Brick_t1619971827_il2cpp_TypeInfo_var);
 		int32_t L_6 = ((Brick_t1619971827_StaticFields*)Brick_t1619971827_il2cpp_TypeInfo_var->static_fields)->get_breakableCount_4();
 		((Brick_t1619971827_StaticFields*)Brick_t1619971827_il2cpp_TypeInfo_var->static_fields)->set_breakableCount_4(((int32_t)((int32_t)L_6-(int32_t)1)));
-		LevelManager_t3355282079 * L_7 = __this->get_levelManager_6();
+		LevelManager_t3355282079 * L_7 = __this->get_levelManager_7();
 		LevelManager_BrickDestroyed_m737389094(L_7, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_8 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_8 = __this->get_explodeParticles_5();
+		GameObject_t1756533147 * L_9 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_10 = GameObject_get_transform_m909382139(L_9, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_11 = Transform_get_position_m1104419803(L_10, /*hidden argument*/NULL);
+		Quaternion_t4030073918  L_12;
+		memset(&L_12, 0, sizeof(L_12));
+		Quaternion__ctor_m3196903881(&L_12, (-180.0f), (0.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		Object_Destroy_m4145850038(NULL /*static, unused*/, L_8, /*hidden argument*/NULL);
-		goto IL_0066;
+		Object_Instantiate_TisGameObject_t1756533147_m3064851704(NULL /*static, unused*/, L_8, L_11, L_12, /*hidden argument*/Object_Instantiate_TisGameObject_t1756533147_m3064851704_MethodInfo_var);
+		GameObject_t1756533147 * L_13 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		Object_Destroy_m4145850038(NULL /*static, unused*/, L_13, /*hidden argument*/NULL);
+		goto IL_009b;
 	}
 
-IL_0060:
+IL_0095:
 	{
 		Brick_LoadSprites_m1048576086(__this, /*hidden argument*/NULL);
 	}
 
-IL_0066:
+IL_009b:
 	{
 		return;
 	}
@@ -481,7 +509,7 @@ extern "C"  void Brick_LoadSprites_m1048576086 (Brick_t1619971827 * __this, cons
 	}
 	int32_t V_0 = 0;
 	{
-		int32_t L_0 = __this->get_timesHit_5();
+		int32_t L_0 = __this->get_timesHit_6();
 		V_0 = ((int32_t)((int32_t)L_0-(int32_t)1));
 		SpriteRenderer_t1209076198 * L_1 = Component_GetComponent_TisSpriteRenderer_t1209076198_m2178781570(__this, /*hidden argument*/Component_GetComponent_TisSpriteRenderer_t1209076198_m2178781570_MethodInfo_var);
 		SpriteU5BU5D_t3359083662* L_2 = __this->get_hitSprites_3();
@@ -510,18 +538,34 @@ extern "C"  void LevelManager__ctor_m1225645824 (LevelManager_t3355282079 * __th
 // System.Void LevelManager::LoadLevel(System.String)
 extern "C"  void LevelManager_LoadLevel_m3771066388 (LevelManager_t3355282079 * __this, String_t* ___name0, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (LevelManager_LoadLevel_m3771066388_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
 	{
 		String_t* L_0 = ___name0;
 		Application_LoadLevel_m393995325(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Brick_t1619971827_il2cpp_TypeInfo_var);
+		((Brick_t1619971827_StaticFields*)Brick_t1619971827_il2cpp_TypeInfo_var->static_fields)->set_breakableCount_4(0);
 		return;
 	}
 }
 // System.Void LevelManager::LoadNextLevel()
 extern "C"  void LevelManager_LoadNextLevel_m4205287453 (LevelManager_t3355282079 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (LevelManager_LoadNextLevel_m4205287453_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
 	{
 		int32_t L_0 = Application_get_loadedLevel_m3768581785(NULL /*static, unused*/, /*hidden argument*/NULL);
 		Application_LoadLevel_m3450161284(NULL /*static, unused*/, ((int32_t)((int32_t)L_0+(int32_t)1)), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Brick_t1619971827_il2cpp_TypeInfo_var);
+		((Brick_t1619971827_StaticFields*)Brick_t1619971827_il2cpp_TypeInfo_var->static_fields)->set_breakableCount_4(0);
 		return;
 	}
 }

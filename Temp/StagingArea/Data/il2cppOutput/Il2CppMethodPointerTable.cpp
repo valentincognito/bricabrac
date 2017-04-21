@@ -8610,6 +8610,7 @@ extern "C" void Plane_get_distance_m1834776091_AdjustorThunk ();
 extern "C" void Plane_Raycast_m2870142810_AdjustorThunk ();
 extern "C" void PreferBinarySerialization__ctor_m2043201510 ();
 extern "C" void PropertyAttribute__ctor_m3663555848 ();
+extern "C" void Quaternion__ctor_m3196903881_AdjustorThunk ();
 extern "C" void Quaternion_Inverse_m3931399088 ();
 extern "C" void Quaternion_INTERNAL_CALL_Inverse_m1043108654 ();
 extern "C" void Quaternion_op_Multiply_m1483423721 ();
@@ -10583,7 +10584,7 @@ extern "C" void Paddle_Start_m1212078847 ();
 extern "C" void Paddle_Update_m257590594 ();
 extern "C" void Paddle_MoveWithMouse_m2465844237 ();
 extern "C" void Paddle_AutoPlay_m1445803082 ();
-extern const Il2CppMethodPointer g_MethodPointers[10569] = 
+extern const Il2CppMethodPointer g_MethodPointers[10570] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -19181,6 +19182,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10569] =
 	Plane_Raycast_m2870142810_AdjustorThunk,
 	PreferBinarySerialization__ctor_m2043201510,
 	PropertyAttribute__ctor_m3663555848,
+	Quaternion__ctor_m3196903881_AdjustorThunk,
 	Quaternion_Inverse_m3931399088,
 	Quaternion_INTERNAL_CALL_Inverse_m1043108654,
 	Quaternion_op_Multiply_m1483423721,

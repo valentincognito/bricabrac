@@ -420,14 +420,15 @@ extern const int32_t g_FieldOffsetTable1658[3] =
 	Ball_t3972794301::get_offset_of_paddleToBallVector_4(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1659 = { sizeof (Brick_t1619971827), -1, sizeof(Brick_t1619971827_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable1659[6] = 
+extern const int32_t g_FieldOffsetTable1659[7] = 
 {
 	Brick_t1619971827::get_offset_of_crack_2(),
 	Brick_t1619971827::get_offset_of_hitSprites_3(),
 	Brick_t1619971827_StaticFields::get_offset_of_breakableCount_4(),
-	Brick_t1619971827::get_offset_of_timesHit_5(),
-	Brick_t1619971827::get_offset_of_levelManager_6(),
-	Brick_t1619971827::get_offset_of_isBreakable_7(),
+	Brick_t1619971827::get_offset_of_explodeParticles_5(),
+	Brick_t1619971827::get_offset_of_timesHit_6(),
+	Brick_t1619971827::get_offset_of_levelManager_7(),
+	Brick_t1619971827::get_offset_of_isBreakable_8(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1660 = { sizeof (LevelManager_t3355282079), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1661 = { sizeof (LoseCollider_t1155462885), -1, 0, 0 };

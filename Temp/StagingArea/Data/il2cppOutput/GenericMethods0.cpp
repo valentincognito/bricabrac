@@ -1333,7 +1333,7 @@ extern Il2CppCodeGenString* _stringLiteral444318565;
 extern const uint32_t Object_Instantiate_TisIl2CppObject_m447919519_MetadataUsageId;
 extern const uint32_t Object_Instantiate_TisIl2CppObject_m1767088036_MetadataUsageId;
 extern const uint32_t Object_Instantiate_TisIl2CppObject_m1736742113_MetadataUsageId;
-extern const uint32_t Object_Instantiate_TisIl2CppObject_m653480707_MetadataUsageId;
+extern const uint32_t Object_Instantiate_TisIl2CppObject_m3829784634_MetadataUsageId;
 extern const uint32_t Object_Instantiate_TisIl2CppObject_m4219963824_MetadataUsageId;
 extern const uint32_t Resources_GetBuiltinResource_TisIl2CppObject_m1023501484_MetadataUsageId;
 extern const uint32_t ScriptableObject_CreateInstance_TisIl2CppObject_m926060499_MetadataUsageId;
@@ -48940,12 +48940,12 @@ IL_0019:
 	}
 }
 // T UnityEngine.Object::Instantiate<System.Object>(T,UnityEngine.Vector3,UnityEngine.Quaternion)
-extern "C"  Il2CppObject * Object_Instantiate_TisIl2CppObject_m653480707_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * ___original0, Vector3_t2243707580  ___position1, Quaternion_t4030073918  ___rotation2, const MethodInfo* method)
+extern "C"  Il2CppObject * Object_Instantiate_TisIl2CppObject_m3829784634_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * ___original0, Vector3_t2243707580  ___position1, Quaternion_t4030073918  ___rotation2, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (Object_Instantiate_TisIl2CppObject_m653480707_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Object_Instantiate_TisIl2CppObject_m3829784634_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	Il2CppObject * V_0 = NULL;

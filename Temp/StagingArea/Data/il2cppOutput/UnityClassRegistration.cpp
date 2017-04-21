@@ -17,6 +17,9 @@ void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_CloudWebServices();
 	RegisterModule_CloudWebServices();
 
+	void RegisterModule_ParticleSystem();
+	RegisterModule_ParticleSystem();
+
 	void RegisterModule_Physics2D();
 	RegisterModule_Physics2D();
 
@@ -132,13 +135,13 @@ class ParticleAnimator;
 class ParticleEmitter; 
 class EllipsoidParticleEmitter; 
 class MeshParticleEmitter; 
-class ParticleSystem; 
+class ParticleSystem; template <> void RegisterClass<ParticleSystem>();
 class Renderer; template <> void RegisterClass<Renderer>();
 class BillboardRenderer; 
 class LineRenderer; 
 class MeshRenderer; template <> void RegisterClass<MeshRenderer>();
 class ParticleRenderer; 
-class ParticleSystemRenderer; 
+class ParticleSystemRenderer; template <> void RegisterClass<ParticleSystemRenderer>();
 class SkinnedMeshRenderer; 
 class SpriteRenderer; template <> void RegisterClass<SpriteRenderer>();
 class TrailRenderer; 
@@ -239,7 +242,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 65 non stripped classes
+	//Total: 67 non stripped classes
 	//0. Behaviour
 	RegisterClass<Behaviour>();
 	//1. Unity::Component
@@ -370,5 +373,9 @@ RegisterBuiltinTypes();
 	RegisterClass<BoxCollider2D>();
 	//64. PhysicsMaterial2D
 	RegisterClass<PhysicsMaterial2D>();
+	//65. ParticleSystem
+	RegisterClass<ParticleSystem>();
+	//66. ParticleSystemRenderer
+	RegisterClass<ParticleSystemRenderer>();
 
 }

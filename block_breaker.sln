@@ -1,7 +1,7 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{A3AB1B94-9577-C7DE-3958-1742030D8263}") = "block_breaker", "Assembly-CSharp.csproj", "{B1A3CE88-1D04-7B9F-FF6F-D2954F93EDEC}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "block_breaker", "Assembly-CSharp.csproj", "{B1A3CE88-1D04-7B9F-FF6F-D2954F93EDEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +36,4 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
-
 EndGlobal

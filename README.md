@@ -1,3 +1,3 @@
 # bricabrac
 
-http://bricabrac.valentinvannay.com/
+[Play the game](http://bricabrac.valentinvannay.com/)

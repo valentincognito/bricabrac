@@ -18,12 +18,14 @@ public class Paddle : MonoBehaviour {
 			AutoPlay();
 		}
 	}
+
 	void MoveWithMouse(){
 		Vector3 paddlePos = new Vector3 (this.transform.position.x, this.transform.position.y, 0f);
 		float mousePosInBlocks = Input.mousePosition.x / Screen.width * 16;
 		paddlePos.x = Mathf.Clamp(mousePosInBlocks, 0f, 15f);
 		this.transform.position = paddlePos;
 	}
+	
 	void AutoPlay(){
 		Vector3 paddlePos = new Vector3 (this.transform.position.x, this.transform.position.y, 0f);
 		Vector3 ballPos = ball.transform.position;

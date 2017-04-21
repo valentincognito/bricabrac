@@ -17,20 +17,13 @@ public class Brick : MonoBehaviour {
 		isBreakable = (this.tag == "Breakable");
 		if(isBreakable){
 			breakableCount++;
-			print(breakableCount);
 		}
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 
 	void OnCollisionExit2D(Collision2D trigger){
 		if(isBreakable){
 			HandleHits();
 		}
-		
 	}
 
 	void HandleHits(){

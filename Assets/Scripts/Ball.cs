@@ -21,8 +21,8 @@ public class Ball : MonoBehaviour {
 				hasStarted = true;
 				this.rigidbody2D.velocity = new Vector2(2f, 10f);
 			}
-		}/* game has not started */
-	}/* update end */
+		}
+	}
 
 	void OnCollisionEnter2D(Collision2D trigger){
 		Vector2 tweak = new Vector2(Random.Range(0f, 0.2f), Random.Range(0f, 0.2f));
